@@ -15,8 +15,8 @@ public class DriveTrain {
 	Spark right2 = new Spark(Constants.TALON_R2_PORT);
 	Spark Elevator = new Spark(Constants.TALON_C_PORT);
 	Spark Tray = new Spark(Constants.TALON_EX_PORT);
-//	Spark LeftRoller = new Spark(Constants.TALON_RL_PORT);
-//	Spark RightRoller = new Spark(Constants.TALON_RR_PORT);
+	//Spark LeftRoller = new Spark(Constants.TALON_RL_PORT);
+	//Spark RightRoller = new Spark(Constants.TALON_RR_PORT);
 
 	public void drive(double left, double right, double turn) {
 		left1.set(left * Constants.MAX_DRIVE_SPEED + turn * Constants.MAX_TURN_SPEED);
@@ -26,7 +26,7 @@ public class DriveTrain {
 
 	}
 
-	// tre is variable for speed, -tre is backwards
+//		//tre is variable for speed, -tre is backwards
 //	public void drive1(double tre) {
 //		LeftRoller.set(tre * Constants.MAX_DRIVE_SPEED_LEFTROLLER);
 //		RightRoller.set(-tre * Constants.MAX_DRIVE_SPEED_RIGHTROLLER);
@@ -43,8 +43,16 @@ public class DriveTrain {
 
 	}
 
-	
-	
+//	public void retractTray(double speed){
+//		
+//		Tray.set(speed);
+//		
+//	}
+//	public void extendTray(double speed){
+//		
+//		Tray.set(-speed);
+//	
+//	}
 
 
 }

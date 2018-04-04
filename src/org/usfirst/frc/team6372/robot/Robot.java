@@ -135,14 +135,14 @@ public class Robot extends IterativeRobot {
 	@Override
 	public void teleopPeriodic() {
 
-		driveTrain.drive(xbc.getRawAxis(Constants.XBC_LEFT_DRIVE_AXIS), xbc.getRawAxis(Constants.XBC_RIGHT_DRIVE_AXIS),
-				xbc.getRawAxis(Constants.XBC_TURN_DRIVE_AXIS));
+		//driveTrain.drive(xbc.getRawAxis(Constants.XBC_LEFT_DRIVE_AXIS), xbc.getRawAxis(Constants.XBC_RIGHT_DRIVE_AXIS),
+			//	xbc.getRawAxis(Constants.XBC_TURN_DRIVE_AXIS));
 
-		rollers.spitCube(xbc.getRawAxis(3));
+	//	rollers.spitCube(xbc.getRawAxis(3));
 
-		rollers.getCube(xbc.getRawAxis(2));
+		//rollers.getCube(xbc.getRawAxis(2));
 
-		elevator.extendElevator(joystick.getRawAxis(Constants.JOYSTICK_ELEVATOR_DRIVE_AXIS));
+		//elevator.extendElevator(joystick.getRawAxis(Constants.JOYSTICK_ELEVATOR_DRIVE_AXIS));
 
 		elevator.retractElevator(joystick.getRawAxis(Constants.JOYSTICK_ELEVATOR_DRIVE_AXIS));
 
