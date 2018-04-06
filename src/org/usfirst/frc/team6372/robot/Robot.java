@@ -4,7 +4,6 @@ import edu.wpi.first.wpilibj.CameraServer;
 import edu.wpi.first.wpilibj.DriverStation;
 import edu.wpi.first.wpilibj.IterativeRobot;
 import edu.wpi.first.wpilibj.Joystick;
-//import edu.wpi.first.wpilibj.drive.DifferentialDrive;
 import edu.wpi.first.wpilibj.command.Subsystem;
 import edu.wpi.first.wpilibj.XboxController;
 import edu.wpi.first.wpilibj.Timer;
@@ -20,6 +19,7 @@ public class Robot extends IterativeRobot {
 	XboxController xbc = new XboxController(0);
 	Joystick joystick = new Joystick(4);
 	Timer timer = new Timer();
+	
 	// DifferentialDrive drive = new DifferentialDrive(1,2,3,4);
 	Spark left2;
 	Spark right2;
@@ -160,6 +160,8 @@ public class Robot extends IterativeRobot {
 			tray.retractTray(0);
 
 		}
+		
+		
 
 	}
 
